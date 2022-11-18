@@ -1,0 +1,41 @@
+{
+  "name": "Sirherobrine23 Website",
+  "updateRemoteUserUID": false,
+  "containerUser": "develop",
+  "remoteUser": "develop",
+  "overrideCommand": false,
+  "postCreateCommand": "npm install",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "USERNAME": "develop",
+      "USER_UID": "1000"
+    }
+  },
+  "runArgs": [
+    "--init",
+    "--privileged"
+  ],
+  "mounts": [
+    "target=/var/lib/docker,type=volume,source=sirherobrinedocker"
+  ],
+  "extensions": [
+    "benshabatnoam.google-translate-ext",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    "redhat.vscode-yaml",
+    "wix.vscode-import-cost",
+    "vscode-icons-team.vscode-icons",
+    "me-dutour-mathieu.vscode-github-actions",
+    "cschleiden.vscode-github-actions",
+    "ms-azuretools.vscode-docker",
+    "chrmarti.regex"
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "files.eol": "\n",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true
+  }
+}
