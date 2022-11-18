@@ -1,26 +1,68 @@
-html,
+@font-face {
+  font-family: "IdreesIncMonocraft";
+  src: url(https://raw.githubusercontent.com/IdreesInc/Monocraft/main/Monocraft.otf);
+}
+
+@font-face {
+  src: url(https://raw.githubusercontent.com/The-Bds-Maneger/Bds-Maneger-html-assets/main/font/Minecraft.ttf);
+  font-family: "MojangMinecraft";
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+select,
+option,
+button
+{
+  font-family: "IdreesIncMonocraft", "MojangMinecraft";
+}
+
+select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 25vmax;
+  border: 1px solid #777;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #e0e0e0;
+  color: #213e3b;
 }
-
+h1, h2, h3, h4, h5, h6 {
+  color: #14274e;
+}
+h3 {
+  color: #7579e7;
+}
 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  color: #3862d4;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
   body {
-    color: white;
-    background: black;
+    background-color: #232b32;
+    color: #f0ece2;
+  }
+  h1 {
+    color: #7579e7;
+  }
+  h3 {
+    color: #69779b;
+  }
+  img {
+    filter: brightness(0.9);
   }
 }
