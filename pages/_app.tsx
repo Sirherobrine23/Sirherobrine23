@@ -36,8 +36,8 @@ export default function MainAPP({ Component, pageProps }: AppProps) {
         </button>
         <div
           className={NavbarCSS["navigation-menu"]}>
-          <ul>{navBarItens.map(compo => {
-            return <li>
+          <ul>{navBarItens.map((compo, index) => {
+            return <li key={index}>
               <Link href={compo.url||"#"} target="_blank">{compo.svg} {compo.name}</Link>
             </li>;
           })}</ul>
