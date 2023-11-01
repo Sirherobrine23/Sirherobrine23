@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "IdreesIncMonocraft";
+  src: url(/font/Monocraft.ttf);
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+select,
+option,
+button
+{
+  font-family: "IdreesIncMonocraft";
+  color: #000000db;
+  font-weight: 500;
+}
+
+code {
+  font-family: "IdreesIncMonocraft";
+  background-color: #000000db;
+  color: #f0ece2;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
+
+select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 25vmax;
+  border: 1px solid #777;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+body {
+  background-color: #ababab;
+  color: #213e3b68;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #14274e;
+}
+h3 {
+  color: #7579e7;
+}
+a {
+  color: #3862d4;
+}
+
+.footerApp {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  font-size: xx-small;
+}
+
+@media (prefers-color-scheme: dark) {
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  div,
+  span,
+  select,
+  option,
+  button {
+    color: #f0ece2;
+  }
+  body {
+    background-color: #000000e8;
+    color: #f0ece2;
+  }
+  h1 {
+    color: #7579e7;
+  }
+  h3 {
+    color: #69779b;
+  }
+  img {
+    filter: brightness(0.9);
+  }
+  code {
+    background-color: #ffffffde;
+    color: #000000db;
+  }
+}
