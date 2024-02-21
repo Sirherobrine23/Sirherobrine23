@@ -23,7 +23,7 @@ export default function MainAPP({ Component, pageProps }: AppProps) {
     },
     {
       name: "Servidor Git",
-      url: "https://git.sirherobrine23.org",
+      url: "https://sirherobrine23.org",
       svg: <svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" viewBox="0 0 219 92">
         <defs>
           <clipPath id="a"><path d="M159 .79h25V69h-25Zm0 0"/></clipPath>

@@ -3,8 +3,6 @@
   "updateRemoteUserUID": false,
   "containerUser": "develop",
   "remoteUser": "develop",
-  "overrideCommand": false,
-  "postCreateCommand": "npm install",
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
