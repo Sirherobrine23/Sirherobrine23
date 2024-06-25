@@ -48,6 +48,8 @@ export default function MainAPP({ Component, pageProps }: AppProps) {
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Loading Sirherobrine23 website</title>
+        <link rel="icon" href="https://sirherobrine23.org/assets/img/favicon.svg" type="image/svg+xml"/>
+	      <link rel="alternate icon" href="https://sirherobrine23.org/assets/img/favicon.png" type="image/png"/>
       </Head>
       <nav className={NavbarCSS["navigation"]}>
         <Link href="/" className={NavbarCSS["brand-name"]}>Sirherobrine23</Link>
@@ -70,9 +72,6 @@ export default function MainAPP({ Component, pageProps }: AppProps) {
         </div>
       </nav>
       <div><Component {...pageProps} /></div>
-      <footer className="footerApp">
-        <div>Direitos a Mathues Sampaio Queiroga</div>
-      </footer>
     </div>
   )
 }
